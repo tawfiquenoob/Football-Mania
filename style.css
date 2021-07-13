@@ -1,0 +1,5 @@
+/* navigation styles for link anchors */
+nav{ display:flex; 
+    justify-content: space-between;}
+nav a{text-decoration: none;}
+nav:visited{color: blue;}
