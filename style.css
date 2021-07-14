@@ -1,26 +1,56 @@
-body{font-family: 'Source Sans Pro', sans-serif;}
-h3{font-size: 28px;}
-p{font-size: 16px;}
+/* This styles the common elelment of the whole website */
+body{font-family: 'Source Sans Pro', sans-serif; background-color: rgb(240, 241, 241);}
+h3{font-size: 28px; line-height: 40px;}
+p{font-size: 16px; line-height: 26px; margin-top: -10px;}
+/* common element styles end */
 
-header { background-color: rgb(255,60,60); 
-    justify-content: center; display: flex; width:100%; height: 677px;}
+/* This contains all header styles including the nav bar and first-section-flexbox */
+    header { background-color: rgb(255,60,60); 
+    justify-content: center; position: relative; display: flex; width:100%; height: 677px;}
+        /* navigation styles for link anchors */
+        nav{position:absolute; 
+            justify-content:center;
+            padding-top: 30px;}
+        nav a{color:darkblue;
+            text-decoration: none; 
+            margin-right: 10px;} 
+        /* end of navigation styles */
+        /* start of first flexbox styles */
+        .first-section-flexbox{ display: flex; 
+            justify-content: center; 
+            width: 100%; 
+            align-items: center;}
+        .titile-main{font-size: 50px; 
+            line-height: 40px;}
+        .graphic img{width: 500px; 
+            height: 438px; 
+            padding-left: 40px;}
+        /* end of first-section-flexbox styles */
+/* header styles end */
 
-/* navigation styles for link anchors */
-nav{position:absolute; justify-content:center;padding-top: 30px;}
-nav a{color:darkblue; text-decoration: none; margin-right: 10px;} 
-
-.first-section-flexbox{ display: flex; justify-content: center; width: 100%; align-items: center;}
-.titile-main{font-size: 50px; line-height: 40px;}
-.graphic img{width: 500px; height: 438px; padding-left: 40px;}
-/* section 1 ends */
-
-/* player-grid styling */
-.player-grid{display:grid; grid-template-columns: repeat(3, 1fr); /* grid template columns 1fr 1fr 1fr */
-    grid-gap: 1em;
-    margin-top: 70px;
-    width: 100%;}
+/* main stying for all sections */
+    /* start section:player-grid styling */
+    .player-grid{
+         display:grid; 
+         grid-template-columns: repeat(3, 1fr); /* grid template columns 1fr 1fr 1fr */
+         grid-gap: 30px; /* grid gap is spacing between the cells */
+         margin-top: 70px;  }
         
-.player-cell{display: flex; background-color: red; width: 330px; height: 426px; padding:15px; box-shadow: 10px 10px 10px grey; justify-content: center; align-items: center;}
-.player-img-text{width: 300px; height: 426px;}
-.player-cell img{width: 300px; height: 256px;}
+    .player-cell{display: flex; 
+        background-color: red;
+        width: 330px; 
+        height: 474px; 
+        justify-content: center;
+        box-shadow: 10px 10px 30px grey;  
+        align-items: center;
+    }
+    .player-img-text{width: 300px; 
+        height: 426px;}
+    .player-cell img{width: 300px;  
+        height: 256px; margin-bottom: -15px; margin-top: -5px;
+        }
+    /* End section:player-grid styling */
+
+    /* start second section styling */
+
     
