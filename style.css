@@ -3,6 +3,7 @@ body{font-family: 'Source Sans Pro', sans-serif; background-color: rgb(240, 241,
 h1{font-size: 64px; }
 h2{ font-size: 48px}
 h3{font-size: 24px; line-height: 40px;}
+h4{font-size: 35px;}
 p{font-size: 16px; line-height: 26px; margin-top: -10px;}
 /* common element styles end */
 
@@ -70,13 +71,16 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
 
 
     /* start venue section styling */
-    .venue-box {display: flex; margin-top: 200px;
+    .venue-box {display: flex;
+        margin-top: 300px;
         justify-content: center; 
         position: relative;
         width: 100%; 
         align-items: center; 
         margin-bottom: 100px;}
+    .venue-head {display: flex; position: relative; top: -250px; right: -500px;}
     .stadium-photo {border: 2px solid black; 
+        overflow:hidden;
         width: 800px; 
         height: 340px;}
     .stadium-photo img {width: 800px; 
@@ -84,10 +88,14 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
     .stadium-text{color: white;
         background: rgba(0, 0, 0, 0.322); 
         position: absolute; 
-        bottom: 0; top: 0; 
-        height: 100%; ;
-        width:84%; 
-        box-sizing: border-box; }
+        left:-100%; 
+        top:0 ; 
+        height: 100%;
+        width:100%;  
+        box-sizing: border-box;
+        transition: all 0.8s; }
+
+    .venue-box:hover .stadium-text {left:0}
     /* end second section style */
     
 
