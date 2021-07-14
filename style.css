@@ -62,33 +62,50 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
 
     /* this styles only the image of the cells */
     .player-cell img{width: 300px;  
-        height: 256px; margin-bottom: -15px; margin-top: -5px;
+        height: 256px;
+        margin-bottom: -15px; 
+        margin-top: -5px;
         }
     /* End section:player-grid styling */
 
 
-    /* start second section styling */
+    /* start venue section styling */
     .venue-box {display: flex; margin-top: 200px;
         justify-content: center; 
         position: relative;
         width: 100%; 
-        align-items: center;}
-    .stadium-photo {border: 2px solid black; width: 420px; 
+        align-items: center; 
+        margin-bottom: 100px;}
+    .stadium-photo {border: 2px solid black; 
+        width: 800px; 
         height: 340px;}
-    .stadium-photo img {width: 420px; 
-        height: 340px; padding-right: 60px; }
-    .stadium-text{background: black;position: absolute; top: 0; left: 0;}
+    .stadium-photo img {width: 800px; 
+        height: 340px; }
+    .stadium-text{color: white;
+        background: rgba(0, 0, 0, 0.322); 
+        position: absolute; 
+        bottom: 0; top: 0; 
+        height: 100%; ;
+        width:84%; 
+        box-sizing: border-box; }
     /* end second section style */
     
 
-    /* start tyling flag section */
-    .flag{ display:flex; justify-content: center; align-items: center;}
-    .flag-img img{width: 100%; height: 500px;}
+    /* start styling flag section */
+    .flag{ display:flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-bottom: 100px;}
+    .flag-img img{width: 100%; 
+        height: 500px;}
     .flag-img img:hover{transform: scale(1.2)}
     .flag-img img {transition: 2s;}
-    .flag-text {text-align: center;}
+    .flag-text {text-align: center; 
+        padding-top: 200px;}
     /* end style */
 
+
+    /* Start footer elements styles */
     .socials{width:100%; 
         justify-content:space-between;
         text-align: center; 
@@ -96,6 +113,7 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
         position: relative;}
     .socials::visited {color:blue}
     .footer-copyright{justify-content: center; text-align: center;}
+    /* End Footer elements style */
 
 
 
