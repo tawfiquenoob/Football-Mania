@@ -1,6 +1,8 @@
 /* This styles the common elelment of the whole website */
-body{font-family: 'Source Sans Pro', sans-serif; background-color: rgb(240, 241, 241);}
-h3{font-size: 28px; line-height: 40px;}
+body{font-family: 'Source Sans Pro', sans-serif; background-color: rgb(240, 241, 241); }
+h1{font-size: 64px; }
+h2{ font-size: 48px}
+h3{font-size: 24px; line-height: 40px;}
 p{font-size: 16px; line-height: 26px; margin-top: -10px;}
 /* common element styles end */
 
@@ -20,37 +22,62 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
             justify-content: center; 
             width: 100%; 
             align-items: center;}
-        .titile-main{font-size: 50px; 
-            line-height: 40px;}
+        
         .graphic img{width: 500px; 
             height: 438px; 
-            padding-left: 40px;}
+            padding-left: 70px;}
+        .title-main{text-align: left;  margin-left:40px}
+        .graphic img:hover{transform: rotate(30deg); transform-origin: ;}
         /* end of first-section-flexbox styles */
 /* header styles end */
 
 /* main stying for all sections */
-    /* start section:player-grid styling */
-    .player-grid{
-         display:grid; 
-         grid-template-columns: repeat(3, 1fr); /* grid template columns 1fr 1fr 1fr */
-         grid-gap: 30px; /* grid gap is spacing between the cells */
-         margin-top: 70px;  }
-        
+
+    /* start section: grid-main styling */
+    .grid-main{display: flex; 
+        justify-content: center; 
+        position:relative}
+    
+    /* this styles the grid properties */
+    .player-grid{               
+        display:grid; 
+        position: relative;
+        grid-template-columns: repeat(3, 1fr); /* grid template columns 1fr 1fr 1fr */
+        grid-gap: 30px; /* grid gap is spacing between the cells */
+        margin-top: 70px;  }
+
+    /* this styles the individual grid cells  */
     .player-cell{display: flex; 
-        background-color: red;
+        background-color:#e50019;
         width: 330px; 
         height: 474px; 
         justify-content: center;
-        box-shadow: 10px 10px 30px grey;  
-        align-items: center;
-    }
+        box-shadow: 5px 8px 30px #2a3b59;  
+        align-items: center;}
+
+    /* this styles the cell content as a whole */
     .player-img-text{width: 300px; 
         height: 426px;}
+
+    /* this styles only the image of the cells */
     .player-cell img{width: 300px;  
         height: 256px; margin-bottom: -15px; margin-top: -5px;
         }
     /* End section:player-grid styling */
 
+
     /* start second section styling */
+    .venue-box {display: flex; margin-top: 200px;
+        justify-content: center; 
+        position: relative;
+        width: 100%; 
+        align-items: center;}
+    .stadium-photo {border: 2px solid black; width: 420px; 
+        height: 340px;}
+    .stadium-photo img {width: 420px; 
+        height: 340px; padding-right: 60px; }
+    .stadium-text{text-align: left; padding-left: 20px;}
+    .stadium-photo:hover{}
+
 
     
