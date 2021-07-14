@@ -27,7 +27,8 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
             height: 438px; 
             padding-left: 70px;}
         .title-main{text-align: left;  margin-left:40px}
-        .graphic img:hover{transform: rotate(30deg); transform-origin: ;}
+        header:hover .graphic img {transform: rotate(20deg); transform-origin: top left;}
+        .graphic img{transition: 1s;}
         /* end of first-section-flexbox styles */
 /* header styles end */
 
@@ -76,8 +77,22 @@ p{font-size: 16px; line-height: 26px; margin-top: -10px;}
         height: 340px;}
     .stadium-photo img {width: 420px; 
         height: 340px; padding-right: 60px; }
-    .stadium-text{text-align: left; padding-left: 20px;}
-    .stadium-photo:hover{}
+    .stadium-text{background: black;position: absolute; top: 0; left: 0;}
+    /* end second section style */
+    
+
+    /* start tyling flag section */
+    .flag{ display:flex; justify-content: center; align-items: center;}
+    .flag-img img{width: 100%; height: 500px;}
+    .flag-img img:hover{zoom: 110%;}
+    .flag-img img {transition: 3s;}
+    .flag-text {text-align: center;}
+    /* end style */
+
+
+
+
+    .footer-copyright{justify-content: center; text-align: center;}
 
 
     
