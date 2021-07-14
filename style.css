@@ -5,7 +5,7 @@ h2{ font-size: 48px}
 h3{font-size: 24px; line-height: 40px;}
 h4{font-size: 35px;}
 p{font-size: 16px; line-height: 26px; margin-top: -10px;}
-.button {padding: 20px; font-size: 16px; color: yellow;}
+button {padding: 5px 20px; font-size: 16px; color: blue; border-radius: 3px;}
 /* common element styles end */
 
 /* This contains all header styles including the nav bar and first-section-flexbox */
